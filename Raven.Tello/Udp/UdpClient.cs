@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using SystemUdpClient = System.Net.Sockets.UdpClient;
@@ -11,7 +10,7 @@ namespace Raven.Tello.Udp
     private static readonly Encoding _encoding = Encoding.ASCII;
 
     private readonly SystemUdpClient _udpClient;
-
+    
     public UdpClient(string address, int port)
     {
       _udpClient = new SystemUdpClient(port);
